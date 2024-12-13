@@ -1,11 +1,27 @@
-# ValeoBOT 
-### Version française -- Traduite par ChatGPT
+# $${\textcolor{limegreen}{ValeoBOT}}$$
+### *Version française -- Traduite par ChatGPT*
 
 
 ValeoBOT est une application de chatbot basée sur Streamlit, conçue pour interagir avec les utilisateurs et fournir des réponses intelligentes en utilisant des modèles de langage. L'application prend en charge la génération augmentée par récupération (RAG) et la fonctionnalité de questions-réponses alimentée par LangChain, FAISS et les embeddings de HuggingFace.
 
-Aperçu disponible hébergé à : [https://valeobot.streamlit.app](https://valeobot.streamlit.app) *Cela peut prendre un certain temps pour se lancer en raison de la taille du contexte fourni*
+Aperçu disponible hébergé à : [https://valeobot.streamlit.app](https://valeobot.streamlit.app)  
 
+> [!TIP]
+> Cela peut prendre un certain temps pour se lancer en raison de la taille du contexte fourni
+
+# Table des matières
+
+1. [Pipeline RAG](#pipeline-rag)
+2. [Fonctionnalités](#fonctionnalités)
+3. [Installation](#installation)
+4. [Usage Guide](#guide-dutilisation)
+    - [Page d'atterrissage](#Page-datterrissage)
+    - [Page de chat](#Page-de-chat)
+    - [Document Retrieval:](#document-retrieval)
+5. [structure des fichiers](#structure-des-fichiers)
+6. [Technologies utilisées](#technologies-utilisées)
+7. [Remarques](#remarques)
+8. [Support](#support)
 
 ## Pipeline RAG 
 
@@ -49,7 +65,8 @@ Lorsque l'utilisateur soumet une requête, le chatbot effectue une recherche de 
     ```
 
 
-Si l'application ne se lance pas automatiquement, ouvrez votre navigateur et accédez à l'URL fournie par Streamlit [http://localhost:8501](http://localhost:8501).
+> [!NOTE]  
+> Si l'application ne se lance pas automatiquement, ouvrez votre navigateur et accédez à l'URL fournie par Streamlit [http://localhost:8501](http://localhost:8501).
 
 ## Guide d'utilisation
 
