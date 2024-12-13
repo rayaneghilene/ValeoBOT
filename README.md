@@ -2,13 +2,22 @@
 
 ValeoBOT is a Streamlit-based chatbot application designed to interact with users and provide intelligent responses using language models. The application supports Retrieval augmented generation and Q&A functionality powered by LangChain, FAISS, and HuggingFace embeddings.
 
-Available preview at: [https://valeobot.streamlit.app](https://valeobot.streamlit.app)
+Available preview hosted at: [https://valeobot.streamlit.app](https://valeobot.streamlit.app) *It might take a while for it to launch because of the size of the provided context*
+
 ## RAG Pipeline
+
+Retrieval-Augmented Generation (RAG) is a text generartion pipelinr that enhances the chatbot's ability to generate more accurate responses by first retrieving relevant information from a document store (in this case, PDFs stored in `/data`) and then using this context to generate a response. This method helps the chatbot answer specific questions with relevant data.
+
+
 ![Images/RAG_Pipeline.png](Images/RAG_Pipeline.png)
 
-The pdf files in `\Data` are embedded using the `all-MiniLM-L12-V2`model from HuggingFace, the embeddings are then stored in the [FAISS](https://github.com/facebookresearch/faiss) Vectorstore. 
+The pdf files in `\Data` are embedded using the `all-MiniLM-L12-V2` model from HuggingFace, the embeddings are then stored in the [FAISS](https://github.com/facebookresearch/faiss) Vectorstore. 
 
-Once the user submits a query, the most relevant chunks of text are selected using similarity search and used as context for llm response. 
+When the user submits a query, the chatbot performs a similarity search to find the most relevant text chunks and uses them as context for generating a response. 
+
+
+![Images/Preview_retrieval.png](Images/Preview_retrieval.png)
+
 
 
 ## Features
@@ -40,7 +49,7 @@ Once the user submits a query, the most relevant chunks of text are selected usi
     ```
 
 
-if not automatically lanuched, open your web browser and navigate to the URL provided by Streamlit 
+If not automatically lanuched, open your web browser and navigate to the URL provided by Streamlit 
 [http://localhost:8501](http://localhost:8501).
 
 ## Usage guide
@@ -52,7 +61,7 @@ if not automatically lanuched, open your web browser and navigate to the URL pro
 
 ![Images/Prerview.png](Images/Landing_Page.png)
 
-    - Note: If not redirected instantly to the chat interface, press again on the submit button.
+- Note: If not redirected instantly to the chat interface, press again on the submit button.
 
 
 
@@ -90,8 +99,9 @@ if not automatically lanuched, open your web browser and navigate to the URL pro
 
 ## Notes
 - The application is designed to handle large PDF datasets; however, performance depends on system resources.
+- Streamlit buttons trigger an action when clicked, but the state might not update immediately, which can cause the need to click twice.
 
 
 ##  Support
 
-Pleas reach out to rayane.ghilene@ensea.fr for any questions, issues, or feedback :)
+Please reach out to rayane.ghilene@ensea.fr for any questions, issues, or feedback :)

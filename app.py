@@ -78,7 +78,6 @@ def chat_page(api_key):
         llm = ChatMistralAI(mistral_api_key=api_key),
         # llm= ChatOllama(model="llava:7b"),
         chain_type ='stuff',
-        # retriever= index.vectorstore.as_retriever(),
         retriever= index.as_retriever(),
         input_key='question'
     )
