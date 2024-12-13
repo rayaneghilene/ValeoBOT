@@ -1,10 +1,28 @@
-# ValeoBOT
-
-<span style="color:red">Pour la documentation en français, veuillez naviguer vers le fichier [README_French.md](./ValeoBOT/README_French.md).</span>
-
+# $${\textcolor{limegreen}{ValeoBOT}}$$ 
 ValeoBOT is a Streamlit-based chatbot application designed to interact with users and provide intelligent responses using language models. The application supports Retrieval augmented generation and Q&A functionality powered by LangChain, FAISS, and HuggingFace embeddings.
 
-Available preview hosted at: [https://valeobot.streamlit.app](https://valeobot.streamlit.app) (*It might take a while for it to launch because of the size of the provided context*)
+Available preview hosted at: [https://valeobot.streamlit.app](https://valeobot.streamlit.app) 
+
+> [!TIP]
+> It might take a while for it to launch because of the size of the provided context
+
+> ✨ README Français: [README_French.md](https://github.com/rayaneghilene/ValeoBOT/blob/main/README_French.md)
+
+# Table of Contents
+
+
+1. [RAG Pipeline](#rag-pipeline)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage Guide](#usage-guide)
+    - [Landing Page](#landing-page)
+    - [Chat Page](#chat-page)
+    - [Document Retrieval](#document-retrieval)
+5. [File Structure](#file-structure)
+6. [Technologies Used](#technologies-used)
+7. [Notes](#notes)
+8. [Support](#support)
+
 
 ## RAG Pipeline
 
@@ -51,8 +69,10 @@ When the user submits a query, the chatbot performs a similarity search to find 
     ```
 
 
-If not automatically lanuched, open your web browser and navigate to the URL provided by Streamlit 
-[http://localhost:8501](http://localhost:8501).
+> [!NOTE]  
+> If not automatically lanuched, open your web browser and navigate to the URL provided by Streamlit [http://localhost:8501](http://localhost:8501).
+
+
 
 ## Usage guide
 
