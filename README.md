@@ -1,8 +1,10 @@
 # ValeoBOT
 
+<span style="color:red">Pour la documentation en français, veuillez naviguer vers le fichier [README_French.md](./ValeoBOT/README_French.md).</span>
+
 ValeoBOT is a Streamlit-based chatbot application designed to interact with users and provide intelligent responses using language models. The application supports Retrieval augmented generation and Q&A functionality powered by LangChain, FAISS, and HuggingFace embeddings.
 
-Available preview hosted at: [https://valeobot.streamlit.app](https://valeobot.streamlit.app) *It might take a while for it to launch because of the size of the provided context*
+Available preview hosted at: [https://valeobot.streamlit.app](https://valeobot.streamlit.app) (*It might take a while for it to launch because of the size of the provided context*)
 
 ## RAG Pipeline
 
@@ -74,7 +76,9 @@ If not automatically lanuched, open your web browser and navigate to the URL pro
 
 
 3. **Document Retrieval:**
-   - The chatbot can answer questions based on the content of the PDF files in the `Data/` folder.
+   - The chatbot can answer questions based on the content of the PDF files in the `Data/` folder. The data is collected from `https://www.daitomoparts.com › catalogos › Valeo` and it is constituted of a valeo component catalog.
+
+
 
 ## File Structure
 
